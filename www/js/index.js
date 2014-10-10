@@ -4,7 +4,7 @@ var launched_count = 0;
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
-		console.log("device ready");
+		console.log("Dan's Device is Ready");
     }
 	
 	function updateDisplay() {
@@ -17,7 +17,7 @@ var launched_count = 0;
     // device APIs are available
     //
     function onDeviceReady() {
-		alert("device ready");
+		alert("Dan's Device is Ready");
         
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
