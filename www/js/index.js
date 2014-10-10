@@ -29,13 +29,13 @@ var launched_count = 0;
     // Handle the pause event
     //
     function onPause() {
-		alert("pause");
+		//alert("pause");
 		paused_count++;
 		updateDisplay();
     }
 	
 	function onResume() {
-		alert("resume");
+		alert("Welcome Back, I Missed You!");
 		resumed_count++;
 		updateDisplay();
     }
