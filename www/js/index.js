@@ -13,11 +13,10 @@ var launched_count = 0;
 		$("#paused").text("Application resumed: " + resumed_count);
 	}
 
-
     // device APIs are available
     //
     function onDeviceReady() {
-		alert("Dan's Device is Ready");
+		//alert("Dan's Device is Ready");
         
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
@@ -35,7 +34,21 @@ var launched_count = 0;
     }
 	
 	function onResume() {
-		alert("Welcome Back, I Missed You!");
+		//alert("Welcome Back, I Missed You!");
 		resumed_count++;
 		updateDisplay();
     }
+
+
+var key = “Food”; 
+var value = “Cake”;
+window.localStorage.setItem( Food, Cake )
+
+var key = “Food”;
+var value = window.localStorage.getItem(Food);
+
+window.localStorage.length;
+
+var key = “Chocbar”; 
+var value = “Galaxy”;
+window.localStorage.setItem( Chocbar, Galaxy )
